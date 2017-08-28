@@ -19,71 +19,81 @@
     <![endif]-->
 </head>
 <body>
-<header class="container-fluid page-header head">
-	<div class="container"> 
-    	<div class="row">
-    		<div class="col-lg-5 col-md-5 col-sm-7 col-xs-12 col">
-        		<div class="logo"><img src="img/Recurso 1.svg"></div>
-    		</div>
-        	<div class=" righthead text-center col-sm-5 col-xs-12 col-md-3 col-md-offset-4 col-lg-3 col-lg-offset-4">
-            <a class="glyphicon glyphicon-user" href="registro.html"><p>Registrarse</p></a>
-            <div class="dropdown">
-            	<button class="btn dropdown-toggle login" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-lock user"><p>Loguearse</p></span>
-              <span class="caret"></span></button>
-                <ul class="dropdown-menu ">
-                <form action="/login" method="post">
-                 <div id="bloque_login1">
+        <header class="container-fluid page-header head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12 col">
+                        <div class="logo"><img src="img/recurso1.svg"></div>
+                    </div>
+                    <div class=" righthead text-center col-xs-12 col-md-7 col-lg-7 col-sm-5">
+                            <div class="col-xs-12 col-md-4 col-lg-4 col-md-offset-3">
+                            <div class="btn btn-default btn-block registbtn" href="registro"><span class="glyphicon glyphicon-user"></span>Registrarse</div>
+                            </div>
+                            <div class="col-xs-12 col-md-5 col-lg-5">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle login" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-lock user"><p>Iniciar sesión</p></span>
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <form action="#" method="post">
+                                        <div id="bloque_login1">
+                                            <li>
+                                                <label for="signin_username" class="col-sm-12 cen control-label text-center">Usuario o E-Mail</label>
+                                                <input type="text" name="signin[username]" autofocus id="signin_username" />
+                                            </li>
+                                            <li>
+                                                <label for="signin_password" class="col-sm-12 control-label">Contraseña</label>
+                                                <input type="password" name="signin[password]" id="signin_password" />
+                                            </li>
+                                            <li>
+                                                <input type="hidden" name="signin[_csrf_token]" value="fde1424d36b861c33ff63f80198dc579" id="signin__csrf_token" />
+                                                <input type="submit" class="col-sm-12 control-label btn btn-success" value="Ingresar" />
+                                            </li>
 
-                  <li>
-                    <label for="signin_username" class="col-sm-12 cen control-label text-center">Usuario o E-Mail</label>
-                    <input type="text" name="signin[username]" autofocus id="signin_username" />
-                  </li>
-                  <li>
-                    <label for="signin_password" class="col-sm-12 control-label">Contraseña</label>
-                    <input type="password" name="signin[password]" id="signin_password" />
-                  </li>
-                  <hr>
-                  <li>
-                    <input type="hidden" name="signin[_csrf_token]" value="fde1424d36b861c33ff63f80198dc579" id="signin__csrf_token" />
-                    <input type="submit" class="col-sm-12 control-label btn btn-success" value="Ingresar" />
-                    <hr>
-                  </li>
-                  
-                  	<div class="col-sm-12">
-                    <a href="/forgot_password">¿Olvidó su contraseña?</a>
-                    <br>
-                    <a href="/registro">¿Quiere registrarse?</a>
-                	</div>
+                                            <div class="col-sm-12">
+                                                <a href="#">¿Olvidó su contraseña?</a>
+                                                <br>
+                                                <a href="#">¿Quiere registrarse?</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </ul>
+                            </div>
+                            </div>
+
+                                            </div>
                 </div>
-                </form>
-                </ul>
-        	  </div>
-          </div>
-    	</div>
-    </div>
-</header>
-<nav class="navbar navbar-default mainmenu">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-</div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav menu">
-        <li class="active"><a href="#"><h3>Inicio</h3><span class="sr-only"></span></a></li>
-        <li><a href="productos.html"><h3>Productos</h3></a></li>
-        <li><a href="empresa.html"><h3>Empresa</h3></a></li>
-        <li><a href="contacto.html"><h3>Contacto</h3></a></li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-        <li></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
+            </div>
+        </header>
+        <nav class="navbar navbar-default mainmenu">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="defaultNavbar1">
+                    <ul class="nav navbar-nav menu">
+                        <li class="active">
+                            <h3><a href="">Inicio</a></h3>
+                        </li>
+                                                    <li>
+                                <h3><a href="login">Comprar</a></h3>
+                            </li>
+                                                <li>
+                            <h3><a href="empresa">Empresa</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="contacto">Contacto</a></h3>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
 <div id="carousel1" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel1" data-slide-to="0" class="active"></li>
